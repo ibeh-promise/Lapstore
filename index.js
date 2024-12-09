@@ -1,6 +1,7 @@
 const express = require("express");
 const cors = require("cors");
 const Router = require("./router/router");
+const path = require("path")
 const app = express();
 const port = 3000;
 
@@ -11,7 +12,7 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
-// Use router
+app.use(express.static(path.join(__dirname, "public")));
 app.use(Router);
 
 app.listen(port, () => {
