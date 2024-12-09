@@ -1,0 +1,140 @@
+:root{
+    --complementary: goldenrod;
+}
+[data-theme="dark"]{
+    --bg-c: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity));
+}
+
+[data-theme="light"]{
+    --bg-c: rgba(var(--bs-light-rgb), var(--bs-bg-opacity));
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: goldenrod;
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-corner, ::-webkit-scrollbar{
+    background-color: #010101;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    transition: all 1s;
+    background-color: var(--bg-c)  !important;
+}
+
+.complementary{
+    color: var(--complementary);
+}
+
+.hero{
+    background-image: url("../images/desktop-wallpaper-web-design-web-developer.jpg");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+    width: 100%;
+    height: 94vh;
+    z-index: index;
+    font-family: 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+.hero-cta{
+    width: 100%;
+    height: 94vh;
+}
+.hero h1{
+    line-height: 1.5em;
+    font-size: 8vmin;
+}
+
+.hero-text{
+    margin-top: -200px;
+    visibility: hidden;
+    animation: heroland 2s ease .5s alternate both;
+}
+
+@keyframes heroland {
+    0%{
+        visibility: hidden;
+        margin-top: -200px;
+    }
+    50%{
+        visibility: visible;
+    }
+    100%{
+        visibility: visible;
+        margin-top: 0px;
+    }
+}
+
+.hero button{
+    width: 200px;
+    height: 50px;
+    padding: 5px;
+    color: var(--complementary);
+    border: 2px solid var(--complementary);
+    background-color: transparent;
+    transition: all 1s;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.button{
+    width: 200px;
+    height: 50px;
+    padding: 5px;
+    color: var(--complementary);
+    border: 2px solid var(--complementary);
+    background-color: transparent;
+    transition: all 1s;
+}
+.hero button:hover{
+    font-weight: 700;
+    background-color: var(--complementary);
+    color: black;
+}
+.brands-link .brands{
+    background-color: var(--complementary);
+    color: black;
+}
+.brands-link .brands:hover{
+    border: 2px solid var(--complementary);
+    color: var(--complementary);
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
+}
+.contact{
+    background-color: rgb(20, 20, 20);
+    height: max-content;
+}
+.contact-cta{
+    height: max-content;
+}
+.showcase{
+    height: 200px;
+}
+.main-head{
+    background-image: url(../images/9f221fcf-fae1-4a41-9872-26a6fd273b65.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 70%;
+    padding: 100px;
+    background-color: #010101;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.main-hero{
+    background-color: #010101;
+}
+.contacts-main p, address{
+    color: #7e7171;
+}
+.testified{
+    height: 330px;
+}
+.head-contact-backgound{
+    background-image: url("../images/9f221fcf-fae1-4a41-9872-26a6fd273b65.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: black;
+    
+}
