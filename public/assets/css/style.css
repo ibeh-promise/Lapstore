@@ -1,6 +1,9 @@
 :root{
     --complementary: goldenrod;
 }
+*{
+    transition: all .2s;
+}
 [data-theme="dark"]{
     --bg-c: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity));
 }
@@ -38,6 +41,10 @@ body{
     height: 94vh;
     z-index: index;
     font-family: 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+a:hover{
+    font-size: 17px;
 }
 .hero-cta{
     width: 100%;

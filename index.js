@@ -16,5 +16,5 @@ app.use(express.static(path.join(__dirname, "public")));
 app.use(Router);
 
 app.listen(port, () => {
-  console.log("Server listening at port", port);
+  console.log("Server listening at port " , `http://localhost:${port}`);
 });

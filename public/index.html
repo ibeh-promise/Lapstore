@@ -19,12 +19,13 @@
         aria-label="Fourth navbar example"
       >
         <div class="container-fluid">
-          <h1>
-          <a class="navbar-brand text-light f-w-900 m-r-100" href="#"
-            ><span class="complementary">THE</span>LAP<span class="complementary">STORE</span></a
-          ></h1>
+          <h1 class="navbar-brand text-light f-w-900 m-r-100">
+            <span class="complementary">THE</span>LAP<span class="complementary"
+              >STORE</span
+            >
+          </h1>
           <button
-            class="navbar-toggler"
+            class="navbar-toggler bg-dark"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarsExample04"
@@ -39,20 +40,24 @@
             <ul
               class="navbar-nav w-100 d-flex justify-content-end align-items-center"
             >
+              <li class="nav-item text-light active f-w-600 m-r-10">Home</li>
               <li class="nav-item">
-                <a class="nav-link text-dark active f-w-600" aria-current="page" href="">Home</a>
+                <a class="nav-link text-dark f-w-400" href="./about">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-dark" href="./about">About</a>
+                <a class="nav-link text-dark f-w-400" href="./contact"
+                  >Contact</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link text-dark" href="./contact">Contact</a>
+                <a class="nav-link text-dark f-w-400" href="./service"
+                  >Service</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link text-dark" href="./service">Service</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-dark" href="./testimonies">Testimonies</a>
+                <a class="nav-link text-dark f-w-400" href="./testimonies"
+                  >Testimonies</a
+                >
               </li>
               <div
                 class="form-check form-switch text-light d-flex align-items-center"
@@ -64,10 +69,10 @@
                   id="flexSwitchCheckChecked"
                   checked
                 />
-                <label
-                  class="form-check-label f-w-600"
+                <small
+                  class="form-check-label f-w-600 text-dark"
                   for="flexSwitchCheckChecked"
-                  >Dark</label
+                  >Dark</small
                 >
               </div>
             </ul>
@@ -127,7 +132,7 @@
         </div>
       </section>
 
-      <section class="contact p-48">
+      <section class="contact p-48 bg-black">
         <h2 class="text-light text-center">Services</h2>
         <div
           class="d-flex justify-content-center align-items-center bg-dark py-48 rounded contact-cta"
@@ -261,8 +266,8 @@
         <div class="container col-xl-10 col-xxl-8 px-4 py-5">
           <div class="row align-items-center g-lg-5 py-5">
             <div class="col-lg-7 text-center text-lg-start">
-              <h1 class="display-4 fw-bold lh-1 mb-3">Testimonies</h1>
-              <p class="col-lg-10 fs-4">
+              <h1 class="display-4 fw-bold lh-1 mb-3 text-dark">Testimonies</h1>
+              <p class="col-lg-10 fs-4 text-dark">
                 This is one of the best legit laptop store, it is affordable and
                 original products, wish i could buy all
               </p>
@@ -318,8 +323,8 @@
             <ul
               class="nav justify-content-center border-bottom pb-3 mb-3 text-light"
             >
-              <li class="nav-item">
-                <a href="" class="nav-link text-light px-2 text-body-start"
+              <li class="nav-item active f-w-600">
+                <a href="" class="nav-link text-dark px-2 text-body-start"
                   >Home</a
                 >
               </li>
@@ -352,17 +357,16 @@
                 >
               </li>
               <li class="nav-item mx-4">
-                
                 <a
-                href="./dashboard"
-                class="text-light f-w-900 text-decoration-none"
+                  href="./dashboard"
+                  class="text-light f-w-900 text-decoration-none"
                 >
-                <button class="btn btn-warning w-100 align-items-center brands">
+                  <button
+                    class="btn btn-warning w-100 align-items-center brands"
+                  >
                     ADMIN
                   </button>
-                  
-                    </a
-                  >
+                </a>
               </li>
               <li class="nav-item">
                 <a href="#" class="nav-link text-secondary px-2 text-body-start"

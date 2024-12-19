@@ -16,11 +16,13 @@
         aria-label="Fourth navbar example"
       >
         <div class="container-fluid">
-          <a class="navbar-brand f-w-900 m-r-100" href="#"
-            >LAP<span class="complementary">STORE</span></a
-          >
+          <h1 class="navbar-brand text-light f-w-900 m-r-100">
+            <span class="complementary">THE</span>LAP<span class="complementary"
+              >STORE</span
+            >
+          </h1>
           <button
-            class="navbar-toggler"
+            class="navbar-toggler bg-dark"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarsExample04"
@@ -36,21 +38,25 @@
               class="navbar-nav w-100 d-flex justify-content-end align-items-center"
             >
               <li class="nav-item">
-                <a class="nav-link" href="../index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../about">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href=""
-                  >Contact</a
+                <a class="nav-link text-dark f-w-400" href="../index.html"
+                  >Home</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="../service">Service</a>
+                <a class="nav-link text-dark f-w-400" href="../about">About</a>
+              </li>
+              <li class="nav-item text-light active f-w-600 m-r-10 m-l-10">
+                Contact
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="../testimonies">Testimonies</a>
+                <a class="nav-link text-dark f-w-400" href="../service"
+                  >Service</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark f-w-400" href="../testimonies"
+                  >Testimonies</a
+                >
               </li>
               <div
                 class="form-check form-switch text-light d-flex align-items-center"
@@ -62,10 +68,10 @@
                   id="flexSwitchCheckChecked"
                   checked
                 />
-                <label
-                  class="form-check-label f-w-600"
+                <small
+                  class="form-check-label f-w-600 text-dark"
                   for="flexSwitchCheckChecked"
-                  >Dark</label
+                  >Dark</small
                 >
               </div>
             </ul>
@@ -73,10 +79,10 @@
         </div>
       </nav>
     </header>
-    <main class="bg-black">
+    <section class="bg-black">
       <div>
-        <div class="head-contact-backgound p-20  py-5">
-          <h1>Contact Us</h1>
+        <div class="head-contact-backgound p-20 py-5">
+          <h1 class="text-white">Contact Us</h1>
           <p class="text-white">Want to get in touch?</p>
         </div>
       </div>
@@ -108,31 +114,31 @@
               <div class="form-floating mb-3">
                 <input
                   type="text"
-                  class="form-control bg-dark text-light"
+                  class="form-control bg-black text-white"
                   id="floatingInput"
                   placeholder="Fullname"
                 />
-                <label for="floatingInput">Full Name</label>
+                <label for="floatingInput text-white">Full Name</label>
               </div>
               <div class="form-floating mb-3">
                 <input
                   type="email"
-                  class="form-control bg-dark text-light"
+                  class="form-control bg-black"
                   id="floatingInput"
                   placeholder="name@example.com"
                 />
-                <label for="floatingInput">Email address</label>
+                <label for="floatingInput text-light">Email address</label>
               </div>
               <div class="form-floating mb-3">
                 <textarea
                   name="yeah"
                   id="textarea"
-                  class="form-control bg-dark text-light"
+                  class="form-control bg-black"
                   cols="30"
                   rows="7"
                   placeholder="Message"
                 ></textarea>
-                <label for="textarea">Message</label>
+                <label for="textarea text-dark">Message</label>
               </div>
 
               <button class="w-100 btn btn-lg btn-warning" type="submit">
@@ -143,7 +149,7 @@
           </div>
         </div>
       </div>
-    </main>
+    </section>
     <footer class="m-t-100 w-100 my-4 text-light container">
       <ul class="nav justify-content-center border-bottom pb-3 mb-3 text-light">
         <li class="nav-item">
@@ -160,8 +166,8 @@
             >About</a
           >
         </li>
-        <li class="nav-item">
-          <a href="../contact" class="nav-link text-light px-2 text-body-start"
+        <li class="nav-item f-w-600">
+          <a href="../contact" class="nav-link text-dark px-2 text-body-start"
             >Contact</a
           >
         </li>
