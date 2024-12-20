@@ -1,0 +1,30 @@
+/* Add this to your styles.css or inline within a <style> tag */
+.image-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    visibility: hidden; /* Initially hidden */
+  }
+  
+  .overlay-image {
+    max-width: 90%;
+    max-height: 90%;
+    border: 2px solid white;
+  }
+  
+  .close-overlay {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 2em;
+    color: white;
+    cursor: pointer;
+  }
+  
