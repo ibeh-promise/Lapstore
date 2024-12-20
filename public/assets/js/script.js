@@ -59,3 +59,34 @@ function applyTheme(theme) {
     flexSwitchCheckChecked.checked = true; // Sync toggle state
   }
 }
+
+
+
+const submitButton = document.getElementById("submit");
+const fullNameInput = document.getElementById("floatingInputName");
+const emailInput = document.getElementById("floatingInputEmail");
+const messageInput = document.getElementById("textarea");
+
+submitButton.addEventListener("click", () => {
+  alert("btn clicked")
+  // Get values from the input fields
+  const userFullName = fullNameInput.value.trim();
+  const userEmail = emailInput.value.trim();
+  const userMessage = messageInput.value.trim();
+
+  // Check if all fields are filled
+  if (userFullName && userEmail && userMessage) {
+    // Construct the WhatsApp message
+    const phoneNumber = "08162118292";
+    const message = `Hello, My name is ${userFullName}, Email: ${userEmail}. Message: ${userMessage}`;
+
+    // Create the WhatsApp URL
+    const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+
+    // Open WhatsApp
+    window.open(whatsappURL, "_blank");
+  } else {
+    // Alert if any fields are missing
+    alert("Please fill in all fields.");
+  }
+});

@@ -100,52 +100,60 @@
               class="d-flex justify-content-evenly align-items-center my-5 w-100"
             >
               <i
-                class="fa-solid fa-phone text-warning p-5 rounded-circle f-s-15 bg-secondary"
+                class="fa-solid fa-phone text-warning p-5 rounded-circle f-s-15 bg-secondary" id="phoneIcon"
               ></i>
 
               <i
-                class="fa-brands fa-whatsapp text-warning p-5 rounded-circle f-s-15 bg-secondary"
+                class="fa-brands fa-whatsapp text-warning p-5 rounded-circle f-s-15 bg-secondary" id="whatsappIcon"
               ></i>
             </div>
           </div>
           <div class="col-md-10 mx-auto col-lg-5">
-            <form class="p-4 p-md-5 border rounded-3">
+            <div class="p-4 p-md-5 border rounded-3">
               <h1 class="text-center text-light">Contact Us</h1>
+            
+              <!-- Full Name Input -->
               <div class="form-floating mb-3">
                 <input
                   type="text"
                   class="form-control bg-black text-white"
-                  id="floatingInput"
+                  id="floatingInputName"
                   placeholder="Fullname"
                 />
-                <label for="floatingInput text-white">Full Name</label>
+                <label for="floatingInputName" class="text-white">Full Name</label>
               </div>
+            
+              <!-- Email Input -->
               <div class="form-floating mb-3">
                 <input
                   type="email"
                   class="form-control bg-black"
-                  id="floatingInput"
+                  id="floatingInputEmail"
                   placeholder="name@example.com"
                 />
-                <label for="floatingInput text-light">Email address</label>
+                <label for="floatingInputEmail" class="text-light">Email address</label>
               </div>
+            
+              <!-- Message Input -->
               <div class="form-floating mb-3">
                 <textarea
-                  name="yeah"
                   id="textarea"
                   class="form-control bg-black"
                   cols="30"
                   rows="7"
                   placeholder="Message"
                 ></textarea>
-                <label for="textarea text-dark">Message</label>
+                <label for="textarea" class="text-dark">Message</label>
               </div>
-
-              <button class="w-100 btn btn-lg btn-warning" type="submit">
-                Submit
+            
+              <!-- Submit Button -->
+              <button class="w-100 btn btn-lg btn-warning" >
+                Send Message
               </button>
               <hr class="my-4" />
-            </form>
+            </div>
+            
+            
           </div>
         </div>
       </div>
@@ -200,5 +208,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="../assets/js/script.js" defer></script>
+    <script src="./contact.js" ></script>
   </body>
 </html>
